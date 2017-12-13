@@ -29,6 +29,16 @@ The integral component is used to compenstate the system bias built in the car. 
 
 The differential component is used for correcting overshooting problem and stablizing the car.
 
+## Results
+
+The tuned parameters are:
+
+* Kp = 0.184872
+* Ki = 0
+* Kd = 4.07324
+
+They are currently in use in `main.cpp` with `enable_twiddle = false`. The car could safely drive a lap the simulator's track. (See test_run.mov)
+
 ## PID Components Optimization
 
 In this project, the PID components are selected by twiddling algorithm.
@@ -55,13 +65,6 @@ The final paramters are selected at 15th iteration, with a minimum total error a
 
 <img src="https://github.com/jane212/CarND-Term2-PIDControl/blob/master/optimal.png" width="300">
 
-The tuned parameters are:
-
-* Kp = 0.184872
-* Ki = 0
-* Kd = 4.07324
-
-They are currently in use in `main.cpp` with `enable_twiddle = false`. The car could safely drive a lap the simulator's track. (See test_run.mov)
 
 
 
